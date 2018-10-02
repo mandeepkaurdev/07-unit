@@ -1,0 +1,126 @@
+header {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    grid-area: header;
+    font-size: 40px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    color: white;
+    background-image: linear-gradient(to right,rgb(165, 7, 95), purple);
+}
+
+
+#input {
+    margin-bottom: 25px;
+    border: 1px solid rgb(165, 7, 95);
+    color: grey;
+    border-radius: 10px;
+    width: 300px;
+    height: 25px;
+    padding-left: 12px;
+    font-size: 23px;
+}
+
+
+form {
+    grid-area: form;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+
+
+ul {
+    grid-area: ul;
+    margin-top: 60px;
+}
+
+
+#checkbox {
+    border: 5px solid black;
+}
+
+
+li {
+    display: inline-block;
+    font-family: "Roboto";
+    background: #eee;
+    padding: 12px 10px 22px 10px;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 10px;
+}
+
+
+#add-button {
+    display: inline-block;
+    background: none;
+    color: blue;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: 100px 100px 1fr;
+    grid-template-areas:
+    "header"
+    "form"
+    "ul";
+}
+
+
+@media only screen and (min-width: 600px) {
+
+#input {
+    width: 550px; 
+    justify-self: center;
+    border-radius: 20px;
+}
+
+
+li {
+    width: 550px;
+}
+
+
+header {
+    height: 75px;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+
+ul {
+    justify-self: center;
+    margin: 50px;
+}
+
+
+form {
+    justify-self: center;
+}
+
+
+#add-button {
+    padding: 5px;
+}
+
+
+form {
+    margin: 125px;
+}
+
+
+}
