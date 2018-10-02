@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // Connect to the Mongo DB using the todolistapp database (will be created if it doesn't exist)
-mongoose.connect('mongodb://user:password@ds121163.mlab.com:21163/heroku_5kg7sc73', { useNewUrlParser: true });
+mongoose.connect('mongodb://user:password2@ds121163.mlab.com:21163/heroku_5kg7sc73', { useNewUrlParser: true });
 
 // Routes
 // -----------------
